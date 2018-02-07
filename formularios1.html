@@ -1,0 +1,101 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	 p{ 
+	    color: red;}
+	</style>
+</head>
+<body>
+<form name="ejemplo" action="13-html5-range-input.php" method="POST">
+    
+  <p>Etiqueta datalist</p>
+  <input list="nav" name="browser">
+    <datalist id="nav">
+	    <option value="internet Explorer">
+	    <option value="Firefox">
+	    <option value="Chrome">
+	    <option value="Opera">
+	    <option value="Safari">
+    </datalist> <br> <br>
+
+  <p>Etiqueta button</p><br>
+  <button type="button" onclick="alert('hola mundo!')">Clic aqui!</button>  <br><br>
+
+  <p>Etiqueta textarea</p>
+  <textarea name="message" rows="10" cols="30"> </textarea> <br><br>
+
+  <p>Etiqueta select</p>
+  <select name="cars">
+    <option value="volvo">Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat" selected>Fiat</option>
+    <option value="audi">Audi</option>
+  </select> <br> <br>
+
+   <p>Etiqueta input con atributo type=text</p>
+   <br> First name:
+   <input type="text" name="firstname" value="Mickey"> <br> 
+   
+   <br>Last name:
+   <input type="text" name="lastname" value="Mouse"> <br> <br>
+
+
+  <p>Etiqueta input con atributo type=submit</p>
+  <input type="submit" value="enviar" > <br> <br>
+
+  <p>Etiqueta input con atributo type=reset</p> <!--Botón de borrado de todos los datos introducidos en el formulario-->
+  <input type="reset" value="cancelar" > <br> <br>
+
+  <p> Etiqueta input con atributo type=radio </p>
+  <input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other <br> <br>
+
+   <p> Etiqueta input con atributo type=checkbox </p> <br>
+
+  <input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+  <input type="checkbox" name="vehicle2" value="Car"> I have a car  <br><br>
+
+  <p> Etiqueta input con atributo type=password </p> <br>
+
+   User name:<br>
+   <input type="text" name="username" required ><br>
+   User password:<br>
+   <input type="password" name="psw"   maxlength="8" > <br> 
+   <input type="submit" value="enviar"> <br> <br>
+
+   <p> Etiqueta input con atributo type=date </p> 
+	<input type="date" name="fecha"> <br>
+
+   <p> Etiqueta input con atributo type=number </p>  
+    Introduce tu edad: <input type="number" name="edad"> <br>  
+    Cantidad:
+   <input type="number" name="points" min="0" max="100" step="10" value="30">
+
+   <p> Etiqueta input con atributo type=email </p>      
+    Introduce tu email: <input type="email" name="email" placeholder="john.doe@mozilla.com" required> <br> <br>
+	
+   <p> Etiqueta input con atributo type=color </p>    
+	Selecciona un color: <input name="color" type="color" value="#f3f3f3"/> <br> <br>
+
+	
+   <p> Etiqueta input con atributo type=image </p>    
+	<input type="image" name="boton" src="android.png" 
+        width="80" height="70" hspace="10" onclick="alert('android!')">
+
+
+   <p> Etiqueta input con atributo type=file </p>    <br>
+   Incluir foto: &nbsp &nbsp <input type="file" name="foto">
+	
+
+   <br><br><br><br><br>
+	 
+</form>
+	
+</body>
+</html>	
